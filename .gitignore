@@ -1,3 +1,9 @@
+# My
+.firebaserc
+firebase.json
+config/firebaseConfig.ts
+secrets/
+
 # Nuxt dev/build outputs
 .output
 .data
