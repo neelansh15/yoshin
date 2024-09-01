@@ -17,7 +17,8 @@
     "firebase-functions": "^5.1.0",
     "nuxt": "^3.13.0",
     "nuxt-vuefire": "^1.0.4",
-    "vue": "latest"
+    "vue": "latest",
+    "vuefire": "^3.2.0"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^3.4.4",
