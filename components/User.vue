@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import type { DropdownItem } from "@nuxt/ui/dist/runtime/types";
+import type { DropdownItem } from "#ui/types";
 
 const currentUser = useCurrentUser();
 const auth = useFirebaseAuth();
-const router = useRouter();
+
+const { isPro, isBusiness } = useRole();
 
 const dropdownItems: DropdownItem[][] = [
   [
@@ -32,7 +33,7 @@ const dropdownItems: DropdownItem[][] = [
         <p
           class="-mt-0.5 text-xs text-primary-600 dark:text-envy-400 font-semibold"
         >
-          Yoshin User
+          {{ isPro ? "Pro" : isBusiness ? "Business" : "Yoshin User" }}
         </p>
       </div>
       <UIcon name="i-heroicons-chevron-down" class="dark:text-white" />
