@@ -7,6 +7,8 @@ const props = defineProps<{
 }>();
 
 const defaultLinks: Link[] = [];
+
+const currentUser = useCurrentUser()
 </script>
 
 <template>
@@ -22,7 +24,10 @@ const defaultLinks: Link[] = [];
       <UColorModeButton />
       <!-- </span> -->
 
-      <SignInButton />
+      <ClientOnly>
+        <User v-if="currentUser && currentUser.email" />
+        <SignInButton v-else />
+      </ClientOnly>
     </template>
   </UHeader>
 </template>
