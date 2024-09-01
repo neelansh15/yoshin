@@ -17,6 +17,14 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@vue-macros/nuxt",
     "nuxt-vuefire",
+    [
+      "@nuxtjs/google-fonts",
+      {
+        families: {
+          Onest: [400, 500, 600, 700, 800, 900],
+        },
+      },
+    ],
   ],
   vuefire: {
     auth: {
