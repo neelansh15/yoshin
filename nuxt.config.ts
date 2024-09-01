@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@vue-macros/nuxt",
     "nuxt-vuefire",
+    '@vueuse/nuxt',
     [
       "@nuxtjs/google-fonts",
       {
