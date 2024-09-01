@@ -21,6 +21,8 @@ const defaultLinks: Link[] = [];
       <!-- <span class="dark"> -->
       <UColorModeButton />
       <!-- </span> -->
+
+      <SignInButton />
     </template>
   </UHeader>
 </template>
